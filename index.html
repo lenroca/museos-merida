@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museos de Mérida, Yucatán</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Carga la API de Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
 </head>
 <body>
     <header>
@@ -22,6 +24,8 @@
         <div id="museos-container">
             <!-- Los museos se cargarán aquí dinámicamente -->
         </div>
+        <!-- Contenedor para el mapa -->
+        <div id="map" style="height: 400px; width: 100%; margin-top: 20px;"></div>
     </section>
 
     <section id="agregar-museo">
