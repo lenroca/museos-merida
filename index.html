@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museos de Mérida, Yucatán</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Museos de Mérida, Yucatán</h1>
+        <nav>
+            <ul>
+                <li><a href="#lista-museos">Lista de Museos</a></li>
+                <li><a href="#agregar-museo">Agregar Museo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="lista-museos">
+        <h2>Lista de Museos</h2>
+        <div id="museos-container">
+            <!-- Los museos se cargarán aquí dinámicamente -->
+        </div>
+    </section>
+
+    <section id="agregar-museo">
+        <h2>Agregar Nuevo Museo</h2>
+        <form id="formulario-museo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" required>
+
+            <label for="horarios">Horarios:</label>
+            <input type="text" id="horarios" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" required></textarea>
+
+            <label for="imagen">URL de la imagen:</label>
+            <input type="url" id="imagen" required>
+
+            <button type="submit">Agregar Museo</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Museos de Mérida, Yucatán</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
